@@ -1,0 +1,4 @@
+nexus:
+  image: jenkins-x-docker-registry.admin:5000/nuxeo/nexus3/devtools:0.0.0-feature-NXBT-2989-nexus-devtools-1
+  persistence:
+    size: 100Gi
