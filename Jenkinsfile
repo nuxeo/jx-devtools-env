@@ -78,6 +78,7 @@ pipeline {
                 --local-cloud-environment \
                 --always-upgrade \
                 --cleanup-temp-files=true \
+                --version=2.0.1547 \
                 --batch-mode
             """
             }
