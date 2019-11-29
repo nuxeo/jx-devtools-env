@@ -72,6 +72,7 @@ pipeline {
 
               # replace env vars in values.yaml: DOCKER_REGISTRY, PUBLIC_DOCKER_REGISTRY_AUTH
               envsubst < values.yaml > myvalues.yaml
+              cat myvalues.yaml
 
               # upgrade Jenkins X platform
               jx upgrade platform --namespace=devtools \
