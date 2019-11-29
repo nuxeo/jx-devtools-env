@@ -58,7 +58,7 @@ pipeline {
             // get the existing docker registry auth
             def dockerRegistryAuth = sh(
               script: """
-                kubectl get secret jenkins-docker-cfg -o go-template=\$'{{index .data "config.json"}}' | base64 --decode | sed -n '/"auth"/p' | awk -F'"' '{print \$4}'
+                kubectl get secret jenkins-docker-cfg -o go-template='{{index .data "config.json"}}' | base64 --decode | sed -n '/"auth"/p' | awk -F'"' '{print \$4}'
               """,
               returnStdout: true
             ).trim();

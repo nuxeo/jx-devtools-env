@@ -1,7 +1,7 @@
 nexus:
   image:
-    repository: jenkins-x-docker-registry.admin:5000/nuxeo/nexus3/devtools
-    tag: 0.0.0-feature-NXBT-2989-nexus-devtools-1
+    repository: ${DOCKER_REGISTRY}/nuxeo/nexus3/team
+    tag: 0.0.7
     pullPolicy: IfNotPresent
   persistence:
     size: 100Gi
